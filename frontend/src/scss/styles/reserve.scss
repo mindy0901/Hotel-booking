@@ -1,0 +1,107 @@
+.reserve {
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.418);
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.reserve__container {
+      min-width: 600px;
+      max-width: 800px;
+      background-color: white;
+      padding: 20px;
+      position: relative;
+      &__close {
+            position: absolute;
+            top: 0;
+            right: 0;
+            cursor: pointer;
+            font-size: 2.4rem;
+            margin: 10px;
+      }
+      > div {
+            margin-top: 20px;
+            @include flex(center, space-between);
+            span {
+                  color: $main-color;
+                  font-size: 1.6rem;
+            }
+      }
+}
+
+.reserve__container__item {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 20px;
+      font-size: 1.4rem;
+      &__info {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+      }
+      &__title {
+            font-weight: 400;
+            font-size: 1.6rem;
+      }
+      &__desc {
+            font-weight: 300;
+            font-size: 1.4rem;
+            color: $text-main-color;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: break-word;
+      }
+      &__max {
+            font-size: 12px;
+            font-size: 1.2rem;
+      }
+      &__price {
+            font-weight: 500;
+            font-size: 1.2rem;
+      }
+}
+
+.reserve__container__item__rooms {
+      width: 200px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-end;
+      > .room {
+            display: flex;
+            flex-direction: column;
+            background-color: #0071c2;
+            font-size: 1.4rem;
+            > label {
+                  color: white;
+            }
+            > input {
+                  width: 30px;
+                  height: 30px;
+                  border-radius: 3px;
+                  cursor: pointer;
+            }
+      }
+}
+
+.reserve__button {
+      border: none;
+      padding: 10px 20px;
+      background-color: #0071c2;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+      width: 100%;
+      margin-top: 20px;
+}

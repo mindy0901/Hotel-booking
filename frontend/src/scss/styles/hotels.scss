@@ -1,0 +1,82 @@
+.hotels__container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+}
+
+.hotels__wrapper {
+      width: 100%;
+      max-width: 1024px;
+      display: flex;
+      gap: 20px;
+}
+
+.hotels__search {
+      flex: 1;
+      min-width: 360px;
+      color: $text-main-color;
+      padding: 10px;
+      background-color: #febb02;
+      border-radius: 12px;
+      height: max-content;
+      position: sticky;
+      top: 10px;
+      > button {
+            color: white;
+            width: 100%;
+            background-color: #0071c2;
+            padding: 10px;
+            font-size: 1.6rem;
+            font-weight: 600;
+            border-radius: 3px;
+            border: none;
+            cursor: pointer;
+      }
+      &__item {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 10px;
+            > label {
+                  width: 200px;
+            }
+            > span {
+                  font-size: 1.6rem;
+                  font-weight: 600;
+                  cursor: pointer;
+            }
+            > input {
+                  padding: 10px;
+                  font-size: 1.6rem;
+                  font-weight: 500;
+            }
+            &__option {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  > span {
+                        font-size: 1.4rem;
+                        height: 30px;
+                        padding: 8px;
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+                  }
+                  > input {
+                        width: 80px;
+                        font-size: 1.4rem;
+                        height: 30px;
+                        border: none;
+                        outline: none;
+                        padding: 8px;
+                  }
+            }
+            > label {
+                  font-size: 1.4rem;
+            }
+      }
+}
+
+.hotels__results {
+      flex: 3;
+}

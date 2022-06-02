@@ -1,0 +1,25 @@
+.auth__input {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid lightgray;
+      input {
+            padding: 4px;
+            font-weight: 400;
+            color: $text-main-color;
+            font-size: 1.6rem;
+            width: 100%;
+            outline: none;
+            border: none;
+      }
+      .auth__icon {
+            color: $text-second-color;
+            margin-left: 4px;
+            font-size: 1.2rem;
+            cursor: pointer;
+      }
+}
+
+

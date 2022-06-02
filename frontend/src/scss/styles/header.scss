@@ -1,0 +1,155 @@
+.header {
+      @include flex(center, center);
+      width: 100%;
+      background-color: $main-color;
+      color: white;
+      position: relative;
+}
+
+.header__container {
+      width: 100%;
+      max-width: 1024px;
+      margin: 20px 0 100px 0;
+      &.list {
+            margin: 20px 0px 20px 0;
+      }
+}
+
+.header__items {
+      @include flex(center, flex-start);
+      gap: 40px;
+}
+
+.header__items__item {
+      @include flex(center, flex-start);
+      cursor: pointer;
+      margin-bottom: 8px;
+      &__icon {
+            font-size: 1.8rem;
+            width: 30px;
+            height: 100%;
+      }
+      span {
+            margin-left: 10px;
+            font-size: 1.6rem;
+      }
+      &.active {
+            border: 2px solid white;
+            padding: 10px;
+            border-radius: 20px;
+      }
+}
+
+.header__title {
+      font-size: 2.4rem;
+      font-weight: 600;
+      margin-top: 20px;
+}
+
+.header__desc {
+      margin: 4px 0 20px 0;
+      font-size: 1.4rem;
+}
+
+.header__btn {
+      background-color: #0071c2;
+      color: white;
+      font-size: 1.4rem;
+      font-weight: 500;
+      border: none;
+      border-radius: 3px;
+      padding: 10px 20px;
+      cursor: pointer;
+}
+
+.header__search {
+      @include flex(center, space-between);
+      width: 100%;
+      height: 50px;
+      max-width: 1024px;
+      background-color: white;
+      border: 3px solid #febb02;
+      border-radius: 4px;
+      position: absolute;
+      bottom: -25px;
+      padding: 0 20px;
+}
+
+.header__search__item {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      color: $text-main-color;
+      >span {
+            @include flex(center, center);
+            height: 100%;
+            width: 100%;
+      }
+      &.date__range {
+            position: relative;
+            cursor: pointer;
+      }
+      &.options {
+            position: relative;
+            cursor: pointer;
+      }
+      &__date {
+            position: absolute;
+            top: 47px;
+            left: 0;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            border-radius: 3px;
+            z-index: 50;
+      }
+      &__options {
+            position: absolute;
+            top: 47px;
+            left: 50px;
+            background-color: white;
+            color: $text-main-color;
+            border-radius: 3px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            z-index: 50;
+            &__item {
+                  @include flex(center, space-between);
+                  width: 200px;
+                  height: 50px;
+                  padding: 0 10px;
+                  span:first-child {
+                        font-size: 1.6rem;
+                        flex: 1;
+                  }
+                  &__counter {
+                        @include flex(center, space-between);
+                        flex: 1;
+                        span {
+                              font-size: 1.6rem !important;
+                        }
+                        button {
+                              cursor: pointer;
+                              @include flex(center, center);
+                              font-size: 2rem;
+                              font-weight: 400;
+                              width: 24px;
+                              height: 24px;
+                              border: none;
+                              border-radius: 2px;
+                        }
+                  }
+            }
+      }
+      &__icon {
+            font-size: 1.8rem;
+            min-width: 20px;
+            margin-right: 4px;
+      }
+      span {
+            font-size: 1.4rem;
+      }
+      input {
+            font-size: 1.4rem;
+            outline: none;
+            padding: 2px 4px;
+            border: none;
+      }
+}

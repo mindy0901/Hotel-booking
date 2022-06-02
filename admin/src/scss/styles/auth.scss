@@ -1,0 +1,55 @@
+.login {
+      @include flex(center, center);
+      height: 100vh;
+      width: 100%;
+}
+
+.lContainer {
+      display: flex;
+      width: 280px;
+      padding: 20px 10px;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.lInput {
+      width: 100%;
+      padding: 10px;
+      margin-left: 4px;
+      font-size: 2rem;
+      cursor: pointer;
+      height: 30px;
+      outline: none;
+}
+
+.lButton {
+      border: none;
+      padding: 16px 20px;
+      background-color: #0071c2;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 1.6rem;
+      width: 100%;
+}
+
+.lButton:disabled {
+      background-color: #0071c28c;
+      cursor: not-allowed;
+}
+
+.ISwitch {
+      font-size: 1.4rem;
+      text-decoration: underline;
+      color: #0071c2;
+      cursor: pointer;
+}
+
+.IError {
+      color: red;
+      font-size: 1.4rem;
+      height: 20px;
+}
